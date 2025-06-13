@@ -9,7 +9,7 @@ public class Server {
         ServerSocket server=new ServerSocket(8080);
         while(true){
             Socket socket=server.accept();
-            System.out.println(socket.getInetAddress());
+            System.out.println(socket.getInetAddress().getHostAddress());
 //        OutputStream stream=socket.getOutputStream();
 //        OutputStreamWriter writer=new OutputStreamWriter(stream);
 //        writer.write("hello world!");

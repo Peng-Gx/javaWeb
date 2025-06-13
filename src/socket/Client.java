@@ -8,12 +8,7 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) throws IOException {
         Socket socket=new Socket("localhost",8080);
-//        InputStream stream=socket.getInputStream();
-//        InputStreamReader reader=new InputStreamReader(stream);
-//
-//        char[] buffer=new char[10];
-//        reader.read(buffer,0,10);
-//        System.out.println(buffer);
+
         OutputStreamWriter writer=new OutputStreamWriter(socket.getOutputStream());
 
         Scanner scanner=new Scanner(System.in);
