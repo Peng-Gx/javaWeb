@@ -12,6 +12,5 @@ public class Main {
             System.out.println("len:"+text.length());
             System.out.println(text);
         }
-
     }
 }
